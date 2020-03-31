@@ -9,11 +9,10 @@ import javax.persistence.*;
 import java.util.List;
 
 @Data
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
+@Entity(name = "ShipmentEntity")
 @Table(name = "shipment")
 public class ShipmentEntity {
     @Id

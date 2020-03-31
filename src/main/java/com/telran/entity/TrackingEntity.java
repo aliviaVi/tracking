@@ -2,13 +2,15 @@ package com.telran.entity;
 
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity(name = "TrackingEntity")
 @Table(name = "tracking")
 public class TrackingEntity {
     @Id
@@ -22,3 +24,5 @@ public class TrackingEntity {
     @JoinColumn(name = "shipment_id")
     private ShipmentEntity shipmentId;
 }
+
+
